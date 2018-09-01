@@ -4,6 +4,9 @@ module.exports = function(environment) {
   let ENV = {
     modulePrefix: 'kath-blogs',
     environment,
+    contentSecurityPolicy: {
+      'connect-src': "'self' http://localhost.com:3000"
+    },
     rootURL: '/',
     locationType: 'auto',
     EmberENV: {

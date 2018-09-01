@@ -1,0 +1,9 @@
+<div class="">
+  <h3>{{model.title}}</h3>
+  <div><img id="previewImage" src={{model.request.url}} atl="Image"></div>
+  <small>{{model.author}}</small>
+  <small>{{model.createOn}}</small>
+  <p>{{model.content}}</p>
+  <button {{action "deleteBlog" model}} type="button" name="button" class="btn btn-danger">Delete</button>
+  {{#link-to "blogs.edit" model class="btn btn-primary"}}Edit{{/link-to}}
+</div>

@@ -1,0 +1,10 @@
+<h1>Blogs</h1>
+{{#each blogs as |blog|}}
+  <div class="">
+    <h3>{{#link-to "blogs.view" blog}}{{blog.title}}{{/link-to}}</h3>
+    <img class="img" src={{blog.request.url}} alt="image">
+    <div class=""><small>{{blog.author}}</small></div>
+    <div class=""><small>{{blog.createOn}}</small></div>
+    <p>{{blog.content}}</p>
+  </div>
+{{/each}}
